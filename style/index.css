@@ -98,7 +98,6 @@ p {
 .container {
     width: 50%;
     margin: 0 auto;
-    border: 2px blue solid;
 }
 
 .top-content {
@@ -177,9 +176,8 @@ footer nav {
 }
 .box1{
     background-color: teal; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
     margin: 2%;
     color: white;
     display: flex;
@@ -188,9 +186,8 @@ footer nav {
 }
 .box2{
     background-color: gold; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
     margin: 2%;
     color: white;
     display: flex;
@@ -199,9 +196,8 @@ footer nav {
 }
 .box3{
     background-color: cadetblue; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
     margin: 2%;
     color: white;
     display: flex;
@@ -211,9 +207,8 @@ footer nav {
 
 .box4{
     background-color: coral; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
     margin: 2%;
     color: white;
     display: flex;
@@ -223,9 +218,9 @@ footer nav {
 
 .box5{
     background-color: crimson; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
+
     margin: 2%;
     color: white;
     display: flex;
@@ -235,9 +230,9 @@ footer nav {
 
 .box6{
     background-color: forestgreen; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px;   
+ 
     margin: 2%;
     color: white;
     display: flex;
@@ -247,9 +242,9 @@ footer nav {
 
 .box7{
     background-color: darkorchid; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
+   
     margin: 2%;
     color: white;
     display: flex;
@@ -259,9 +254,9 @@ footer nav {
 
 .box8{
     background-color: hotpink; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px;  
+  
     margin: 2%;
     color: white;
     display: flex;
@@ -271,9 +266,9 @@ footer nav {
 
 .box9{
     background-color: indigo; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
+ 
     margin: 2%;
     color: white;
     display: flex;
@@ -283,9 +278,9 @@ footer nav {
 
 .box10{
     background-color: dodgerblue; 
-    height: 100px; 
-    width: 100px; 
-    width: 15%; 
+    height: 80px; 
+    width: 80px; 
+
     margin: 2%;
     color: white;
     display: flex;
@@ -299,7 +294,37 @@ footer nav a {
     text-decoration: none;
 }
 @media(max-width: 800px){
-
+    .jumbo{
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: 02% auto;
+    }
+    .container1 {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        margin: 2% 0 2% 2%;
+    }
+    .text-container h2 {
+        font-size: 1.5rem;
+        padding-bottom: 2%;  
+    }
+    .text-container p{
+        color: grey;
+        font-size: 1rem;
+    }
+    .middle-content h2{
+        font-size: 1.5rem;
+    }
+    .boxes * {
+        height: 100px;
+        width: 100px;
+    }
 }
 @media(max-width: 500px){
     .container1{
@@ -330,12 +355,10 @@ footer nav a {
         border-radius: 5px;
         color: black;
         text-decoration: none;
-
     }
     .container {
         width: 100%;
         margin: 0 auto;
-        border: 2px blue solid;
     }
     .mobilehidden {
         display: none;
@@ -355,6 +378,7 @@ footer nav a {
         width: 100%;
         padding: 0 1%;
         padding-bottom: 2%;  
+        font-size: .9rem;
     }
     .text-container p{
         color: grey;
@@ -364,10 +388,8 @@ footer nav a {
         align-items: center;
     }
     .boxes * {
-        border: red 2px solid;
         height: 150px;
         width: 150px;
-
     }
     .box1{
         background-color: teal; 
@@ -415,5 +437,28 @@ footer nav a {
     .box10{
         background-color: dodgerblue; 
         color: white;
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        margin: 2% 2%;
+        justify-content: space-around;
+    }
+    .text-container{
+        margin: 2% 2%;
+    }
+    .text-container p{
+        font-size: .9rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer nav a {
+        color: grey;
+        text-decoration: none;
+        background-color: white ;
     }
 }
